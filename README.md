@@ -1,6 +1,6 @@
-#短信组件
+# 短信组件
 
-##发送短信代码示例
+## 发送短信代码示例
 
     use Delz\SMS\Provider\Tong3;
     use Delz\SMS\Manager;
@@ -34,8 +34,9 @@
         echo '发送失败,原因是:' . $result->getMessage()->getFailReason();
     }
     
-##短信发送报告获取
-    use Delz\SMS\Provider\Tong3；
+## 短信发送报告获取
+
+    use Delz\SMS\Provider\Tong3;
     use Delz\SMS\Manager;
     
     //利用composer的autoload
