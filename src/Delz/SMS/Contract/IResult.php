@@ -22,4 +22,11 @@ interface IResult
      * @return IMessage
      */
     public function getMessage();
+
+    /**
+     * 获取消息Id
+     *
+     * @return string
+     */
+    public function getMessageId();
 }

@@ -41,4 +41,13 @@ class Result implements IResult
     {
         return $this->message;
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getMessageId()
+    {
+        return $this->message->getId();
+    }
+
 }
