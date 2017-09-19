@@ -2,6 +2,8 @@
 
 ## 发送短信代码示例
 
+```php
+    <?php
     use Delz\SMS\Provider\Tong3;
     use Delz\SMS\Manager;
 
@@ -33,9 +35,12 @@
     } else {
         echo '发送失败,原因是:' . $result->getMessage()->getFailReason();
     }
+ ```
     
 ## 短信发送报告获取
 
+```php
+    <?php
     use Delz\SMS\Provider\Tong3;
     use Delz\SMS\Manager;
     
@@ -56,7 +61,7 @@
     $reports = $manager->getReports();
     
     //更新日志，报告Id即消息Id，根据消息Id，读取消息日志，然后用报告的反馈更新消息日志的状态
-    
+``` 
     
     
     
